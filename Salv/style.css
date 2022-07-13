@@ -1,0 +1,133 @@
+@font-face {
+	font-family: 'Whitney';
+	src: url(fonts/Whitney-Light-Pro.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    min-height: 55vh;
+    width: 100%;
+    background-color: rgba(55,56,76,255);
+	background-image: url('images/hero_background.svg');
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+}
+
+.ribbon img{
+	margin: 50px 0 0 0;
+    width: 100%;
+}
+.salv{
+	display: flex;
+	padding: 1% 9%;
+	justify-content: space-between;
+	align-items: center;
+}
+.description{
+	margin: 30px 10px 20px;
+	width: 90%;
+	color: white;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.description h2{
+	font-family: 'Whitney';
+	font-size: 40px;
+	color: white;
+}
+.description p{
+	font-family: 'Whitney';
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color: #9A9A9A;
+}
+.button{
+	display: inline-block;
+	border: none;
+	text-decoration: none;
+	font-family: 'Whitney';
+	font-size: 12px; 
+	color: white;
+	background-color: #4a91f2;
+	padding: 8px 18px;
+	border-radius: 8px;
+	position: relative;
+	transition: 0.3s;
+	margin-bottom: 16vh;
+}
+.button:hover {	
+	background-color: #74ABF5;
+}
+.grid-container{
+	display: flex;	
+}
+.logo-grid{
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+.logo{
+	display: block;
+	flex-basis: 100%;
+}
+
+.salv-info{
+	width: 100%;
+	text-align: center;
+	padding-top: 110px;
+	margin-bottom: 10px;
+}
+
+.salv-info h2{
+	margin-top: 20px;
+	font-family: 'Whitney';
+	font-size: 40px;
+	color: #e69c3c;
+}
+.salv-info p{
+	font-family: 'Whitney';
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color:#636363;
+}
+
+@media(max-width: 700px){
+	.description{
+		margin: 5px 0 30px;
+	}
+	.description h2{
+		font-size: 20px;
+		margin-top: 20px;
+	}
+	.description p{
+	font-size: 14px;
+	}
+	.logo{
+		flex-basis: 50%;
+	}
+	.button{
+		margin-bottom: 25vh;
+	}
+	.salv-info h2{
+		font-size:20px;
+	}
+	.salv-info p{
+		font-size:14px;
+	}
+	.salv-info{
+		padding-top: 50px;
+	}
+	.header{
+		min-height: 58vh;
+		background-position: 52% 48%;
+	}
+}
